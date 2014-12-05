@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Highlight</title>
+    <link href="static/styles/bundle.min.css" type="text/css" rel="stylesheet">
+    <script src="static/js/app.js"></script>
+</head>
+<body>
+<input type="text" id="stxt" onkeyup="filterTable(this, 'table')"/>&nbsp;<input type="checkbox" id="hideTr" onclick="filterTable(document.getElementById('stxt'), 'table')"/>Скрывать строки, в которых не найдены соответствия
+<table id="table">
+    <tr class="header">
+        <th>Name</th>
+        <th>Name,Reginal</th>
+        <th>Phone/Fax</th>
+        <th>Email</th>
+        <th>Street Address</th>
+        <th>City</th>
+        <th>Region</th>
+        <th>Country</th>
+        <th>Bank Account Nums</th>
+        <th>Credit Card Nums</th>
+    </tr>
+    <tr>
+        <td>Mufutau</td>
+        <td>Wade</td>
+        <td>1-905-605-9303</td>
+        <td>Donec.fringilla@tellusjustosit.co.uk</td>
+        <td>666-9161 Ultricies Rd.</td>
+        <td>Omaha</td>
+        <td>Nebraska</td>
+        <td>Guam</td>
+        <td>MK52107975175247354</td>
+        <td>5194848516131751</td>
+    </tr>
+    <tr>
+        <td>Ross</td>
+        <td>Ryder</td>
+        <td>1-975-628-2255</td>
+        <td>Aliquam@Nullamnisl.co.uk</td>
+        <td>3688 Convallis Avenue</td>
+        <td>Chippenham</td>
+        <td>WI</td>
+        <td>Saint Barthélemy</td>
+        <td>GT20732720964870768136139428</td>
+        <td>5137476464868523</td>
+    </tr>
+    <tr>
+        <td>Cedric</td>
+        <td>Kenneth</td>
+        <td>1-605-402-6083</td>
+        <td>nec.malesuada@neque.co.uk</td>
+        <td>4794 Ante. St.</td>
+        <td>Valley East</td>
+        <td>ON</td>
+        <td>Kiribati</td>
+        <td>RO79RLHL9308982674938624</td>
+        <td>5127621040972883</td>
+    </tr>
+    <tr>
+        <td>Keegan</td>
+        <td>Francis</td>
+        <td>1-783-482-0119</td>
+        <td>semper.erat@vitaeodio.edu</td>
+        <td>P.O. Box 847, 3722 Nam Ave</td>
+        <td>Flint</td>
+        <td>Michigan</td>
+        <td>Saudi Arabia</td>
+        <td>LT354752600392649373</td>
+        <td>4749569833418355</td>
+    </tr>
+    <tr>
+        <td>Judah</td>
+        <td>Zachary</td>
+        <td>1-306-725-3803</td>
+        <td>augue.porttitor@Phasellusfermentum.co.uk</td>
+        <td>5766 Eleifend. Avenue</td>
+        <td>March</td>
+        <td>CA</td>
+        <td>Norway</td>
+        <td>TR530689349453457430041169</td>
+        <td>372406678118277</td>
+    </tr>
+    <tr>
+        <td>Isaiah</td>
+        <td>Yardley</td>
+        <td>1-272-561-5978</td>
+        <td>Nullam.vitae@facilisisfacilisismagna.edu</td>
+        <td>Ap #155-6186 Ornare Rd.</td>
+        <td>Huesca</td>
+        <td>Aragón</td>
+        <td>Honduras</td>
+        <td>MK62171515809147242</td>
+        <td>4153540318878368</td>
+    </tr>
+    <tr>
+        <td>Barclay</td>
+        <td>Steel</td>
+        <td>1-336-335-1091</td>
+        <td>ipsum.cursus.vestibulum@arcuVestibulumante.ca</td>
+        <td>7212 Lacus. Avenue</td>
+        <td>Berlin</td>
+        <td>BE</td>
+        <td>Uganda</td>
+        <td>SM3235159699672319596797007</td>
+        <td>342340020953678</td>
+    </tr>
+    <tr>
+        <td>Hop</td>
+        <td>Brock</td>
+        <td>1-954-946-6900</td>
+        <td>ut.pharetra@aliquetlibero.net</td>
+        <td>P.O. Box 991, 195 Eu Rd.</td>
+        <td>Belfast</td>
+        <td>U</td>
+        <td>Nauru</td>
+        <td>AZ33738072756026885714538614</td>
+        <td>375275673214343</td>
+    </tr>
+    <tr>
+        <td>Alvin</td>
+        <td>Tucker</td>
+        <td>1-383-245-5316</td>
+        <td>urna.Vivamus.molestie@orci.co.uk</td>
+        <td>485-4243 Cras St.</td>
+        <td>Jolanda di Savoia</td>
+        <td>Emilia-Romagna</td>
+        <td>Western Sahara</td>
+        <td>AE775330363253447040983</td>
+        <td>5171866108686666</td>
+    </tr>
+    <tr>
+        <td>Armand</td>
+        <td>Cain</td>
+        <td>1-201-313-5860</td>
+        <td>blandit@lectusasollicitudin.co.uk</td>
+        <td>695-3052 Lorem. Avenue</td>
+        <td>Kortrijk</td>
+        <td>West-Vlaanderen</td>
+        <td>Guyana</td>
+        <td>CR2947644401321829065</td>
+        <td>4546135808946563</td>
+    </tr>
+    <tr>
+        <td>Jameson</td>
+        <td>Keefe</td>
+        <td>1-909-299-5256</td>
+        <td>odio.sagittis.semper@netusetmalesuada.com</td>
+        <td>865-2025 Luctus Avenue</td>
+        <td>Galway</td>
+        <td>C</td>
+        <td>Libya</td>
+        <td>MU7291762444913690548698805721</td>
+        <td>372867166903332</td>
+    </tr>
+</table>
+</body>
+</html>

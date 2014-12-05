@@ -1,0 +1,21 @@
+.highlighted
+{
+	background-color:#6666FF;
+}
+#table
+{
+	padding:2px;
+	border-collapse: collapse;
+}
+#table td
+{
+	text-align: center;
+}
+#table tr
+{
+	border-bottom:1px solid #CCCCCC;
+}
+#table tr.hide
+{
+	display: none;
+}

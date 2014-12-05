@@ -1,0 +1,5 @@
+.highlighted{background-color:#66F}
+#table{padding:2px;border-collapse:collapse}
+#table td{text-align:center}
+#table tr{border-bottom:1px solid #CCC}
+#table tr.hide{display:none}
